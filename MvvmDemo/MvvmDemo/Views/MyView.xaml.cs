@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MvvmDemo
+namespace MvvmDemo.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MyView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MyView : UserControl
     {
-        public MainWindow()
+        public MyView()
         {
             InitializeComponent();
         }
