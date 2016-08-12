@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="MvvmDemo.Views.MyView"
+﻿<UserControl x:Class="MvvmDemo.Views.MySecondView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -18,10 +18,9 @@
             <RowDefinition Height="3*"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
-        <TextBox x:Name="Name" />
-        <Button x:Name="SayHello"
-                Content="Click Me"
-                cal:Message.Attach="DoSomethingCommand"/>
+        <Label Content="This is my second screen" />
+        <Button Content="Go to first screen!"
+                cal:Message.Attach="GoPrev"/>
     </StackPanel>
     </Grid>
 </UserControl>

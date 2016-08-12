@@ -73,21 +73,36 @@
     </ApplicationDefinition>
     <Compile Include="AppBootstrapper.cs" />
     <Compile Include="utils\RelayCommand.cs" />
-    <Compile Include="Views\MyView.xaml.cs">
-      <DependentUpon>MyView.xaml</DependentUpon>
+    <Compile Include="ViewModels\MySecondViewModel.cs" />
+    <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\MySecondView.xaml.cs">
+      <DependentUpon>MySecondView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MyFirstView.xaml.cs">
+      <DependentUpon>MyFirstView.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\MyView.xaml">
+    <Compile Include="Views\ShellView.xaml.cs">
+      <DependentUpon>ShellView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\MySecondView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MyFirstView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyModel.cs" />
-    <Compile Include="ViewModels\MyViewModel.cs" />
+    <Compile Include="ViewModels\MyFirstViewModel.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

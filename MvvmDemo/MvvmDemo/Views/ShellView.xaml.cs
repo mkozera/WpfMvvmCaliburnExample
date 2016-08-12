@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace MvvmDemo.Views
 {
     /// <summary>
-    /// Interaction logic for MyView.xaml
+    /// Interaction logic for ShellView.xaml
     /// </summary>
-    public partial class MyView : UserControl
+    public partial class ShellView : UserControl
     {
-        public MyView()
+        public ShellView()
         {
             InitializeComponent();
         }
